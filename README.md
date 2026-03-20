@@ -4,7 +4,6 @@ Prototype for recovering ML-ready annotations from 18,304 historical bird survey
 Data source: twi-aviandata.s3.amazonaws.com (Gulf of Mexico avian monitoring, 2010-2021, post-Deepwater Horizon)
 
 ---
-
 ## About This Work
 This prototype was built over 1.5 months under the mentorship of my uncle and guidance from past GSoC contributors who guided me through the open-source contribution process and research. Before writing any pipeline code, I spent two weeks studying the data — mapping 533K files in the S3 bucket, analyzing 49,204 CSV rows across 60 columns, downloading and measuring 25 diverse images, and testing existing models (SAM 3, DeepForest, GroundingDINO) to understand what was feasible.
 The pipeline went through five detector versions, four training experiments, and six approaches that were tested and abandoned. Every failure is documented with root cause analysis. 
@@ -78,21 +77,6 @@ The complete pipeline story on one image: (1) corrupted screenshot with baked-in
 
 Training only on SIFT-mapped images (0.5px position accuracy, 920 annotations) produced the only improvement over pretrained: +29% max score, 0 to 1 high-confidence detection. This confirmed that position accuracy — not data quantity — drives training quality. With 76% fewer annotations but accurate positions, the model improved. With the full dataset (including ~30px position errors), it got worse.
 
----
-## What this prototype does
-I spent about a month building this. The first two weeks were pure study — mapping the S3 bucket (533K files), analyzing the CSV (49,204 rows, 60 columns), downloading 25 diverse images, measuring dot sizes and colors, testing SAM 3 and DeepForest, and figuring out what was actually feasible before writing any pipeline code.
-The pipeline itself went through multiple iterations. Five versions of the detector, four training experiments, six approaches that failed and got thrown out. Everything is documented.
-### The pipeline
-
-Screenshot → Decompose → Detect Dots → Validate → Map to Original → Export
-
-1. Split screenshot into aerial photograph and dialog box (3-method consensus boundary detection)
-2. Detect colored annotation dots using wide HSV bins with vegetation-adaptive thresholds
-3. Match detected color groups to CSV species by count similarity
-4. Validate detected positions (98.3% land on high-saturation pixels)
-5. Map dot coordinates from screenshot to original using SIFT homography or uniform scaling
-6. Export as DeepForest CSV (image_path, xmin, ymin, xmax, ymax, label)
-
 ## Results
 
 | Metric | Value |
@@ -111,61 +95,49 @@ Screenshot → Decompose → Detect Dots → Validate → Map to Original → Ex
 
 ## What didn't work (and why)
 
-| Approach | Result | 
+| Approach | Result |
 |----------|--------|
 | OCR on dialog box | 4-15% precision |
 | Dialog color clusters | 8% accuracy | 
 | Narrow HSV bins | 44% accuracy | 
 | Text watermark filter | Removed real dots | 
-| Training on full dataset | 0 high-conf detections | 
+| Training on full dataset | 0 high-conf detections |
 | Species-aware boxes | Made it worse | 
 
-### What partially worked
+## Pipeline
+Screenshot → Decompose → Detect Dots → Validate → Map → Export
 
-SIFT-only training (using only images with 0.5px-accurate coordinate mapping) produced a +29% improvement in max detection score over pretrained DeepForest. One high-confidence detection appeared. Direction is correct but the model isn't useful yet — needs more SIFT-mapped data or SAM 3 box refinement.
+1. **Screenshot Decomposition** — 3-method consensus boundary detection
+2. **Dot Detection** — Wide HSV bins, vegetation-adaptive thresholds, count-guided selection from CSV
+3. **Validation** — 98.3% of detected dots land on high-saturation pixels
+4. **Coordinate Mapping** — SIFT homography (0.5px) with uniform fallback (height-based)
+5. **SAM 3 Integration** — Bird validation, habitat classification, scene captioning
+6. **Export** — DeepForest-compatible CSV with train/test split
 
----
+## Key Findings
 
-## Numbers
+- CSV ground truth is 100% accurate — OCR abandoned after testing
+- Wide HSV bins outperform narrow and adaptive approaches
+- Birds in colony rows resemble text — text filter disabled
+- Uniform scale_x is wrong — use scale_y for both axes
+- bfloat16 from SAM 3 silently corrupts DeepForest training
+- Position accuracy matters more than box size or data quantity
+- Full list: [docs/learnings.md](docs/learnings.md)
+- Training details: [docs/training_analysis.md](docs/training_analysis.md)
 
-**Dataset**: 49,204 CSV rows, 18,304 unique screenshots, 102 species, 18 annotators, 442 colonies, 5 states (LA 71%, TX 15%, AL 8%, FL 6%, MS 1%), years 2010-2021.
+## Repository Structure
+notebook/prototype_v1.ipynb — Complete prototype, 23 sections, runs in Colab
+results/ — All output figures, metrics (JSON), annotations (CSV)
+docs/learnings.md — 21 documented learnings
+docs/training_analysis.md — 4 training experiments with root cause analysis
 
-**Dot properties** (measured from real data): diameter 5.7-9.6px (median 8.0), area 26-72 px², circularity 0.574 median, anti-aliased 2%, green-on-green contrast 10.4 on worst image.
+## Quick Start
 
-**Detection on 4 study images** (selected for difficulty — not representative):
-- D (Raccoon Island, 538 birds): 62.5%
-- B (Gaillard Island, 91 birds): 68.8%
-- A (Felicity Island, 1388 birds): 51.3%
-- C (North Deer Island, 96 birds, green-on-green): 47.8%
+Open `notebook/prototype_v1.ipynb` in Google Colab. Set runtime to T4 GPU. Run all cells top to bottom (~45 minutes).
 
-**Detection on 30 batch images** (stratified random — true performance):
-- Overall: 70.8%, median 74.2%, range 9-100%
-- 3 images at 100%, 11 above 85%, 3 below 30%
-- Works across all 7 years and 10 annotators tested
+## Dataset
 
-**SAM 3**: 2,387 bird detections total, 593 dots confirmed (15%), 2,012 COPPER (birds SAM found that our pipeline missed). Habitat: marsh grass 45%, vegetation 39%, sandy beach 9%, bare ground 6%.
-
-**Training root cause**: uniform coordinate mapping introduces ~30px position error → training boxes don't align with actual birds → IoU below threshold → model ignores those samples → underfits. SIFT mapping (0.5px error) fixes this.
-
----
-
-## Repository structure
-notebook/prototype_v1.ipynb — Full prototype, 23 sections, runs in Colab (~45 min on T4 GPU)
-results/figures/ — Output figures (populated after notebook run)
-results/metrics/ — JSON metrics from each pipeline stage
-results/annotations/ — Recovered annotations in DeepForest CSV format
-docs/learnings.md — 21 learnings from failed and successful approaches
-docs/training_analysis.md — Detailed analysis of 4 training experiments
-
-## How to run
-
-Open `notebook/prototype_v1.ipynb` in Google Colab. Set runtime to T4 GPU. Run all cells top to bottom. Takes about 45 minutes. Cells 1-14 run on CPU (data download + pipeline). Cells 15-17 need GPU (SAM 3 + DeepForest training).
-
-## What I learned
-
-The biggest lesson: study the data before building. I spent 40% of my time just measuring things — dot sizes, color distributions, screenshot formats, vegetation percentages, annotator patterns. Every measurement directly informed a pipeline parameter. The detection accuracy jumped from 44% (first version, guessed parameters) to 70.8% (final version, measured parameters) without changing the fundamental approach.
-
-The second lesson: be honest about what doesn't work. OCR looked promising in theory but failed at 4% precision. Training on the full dataset produced zero useful detections. Documenting these failures and understanding why they failed (not just that they failed) turned out to be more valuable than the successes — it points directly to what needs to happen next.
+Source: twi-aviandata.s3.amazonaws.com — 18,304 annotated screenshots, 49,204 CSV rows, 102 species, 18 annotators, 442 colonies, 7 years (2010-2021), 5 Gulf Coast states.
 
 Full list of learnings: [docs/learnings.md](docs/learnings.md)
 
