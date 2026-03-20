@@ -111,14 +111,14 @@ Screenshot → Decompose → Detect Dots → Validate → Map to Original → Ex
 
 ## What didn't work (and why)
 
-| Approach | Result | Root Cause |
-|----------|--------|------------|
-| OCR on dialog box | 4-15% precision | Fuzzy matching hits random English words |
-| Dialog color clusters | 8% accuracy | Position-based assumption was wrong |
-| Narrow HSV bins | 44% accuracy | Real dots have more color variation than expected |
-| Text watermark filter | Removed real dots | Birds in rows look like text characters |
-| Training on full dataset | 0 high-conf detections | 43% of data has ~30px position error |
-| Species-aware boxes | Made it worse | Can't fix positions with better boxes |
+| Approach | Result | 
+|----------|--------|
+| OCR on dialog box | 4-15% precision |
+| Dialog color clusters | 8% accuracy | 
+| Narrow HSV bins | 44% accuracy | 
+| Text watermark filter | Removed real dots | 
+| Training on full dataset | 0 high-conf detections | 
+| Species-aware boxes | Made it worse | 
 
 ### What partially worked
 
