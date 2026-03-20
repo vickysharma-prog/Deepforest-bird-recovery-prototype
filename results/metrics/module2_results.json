@@ -1,0 +1,745 @@
+{
+  "A": {
+    "ground_truth": {
+      "species_counts": {
+        "BRPE": 108,
+        "LAGU": 797,
+        "TRHE": 28,
+        "SNEG": 5,
+        "ROYT": 306,
+        "ULTE": 3,
+        "UNTE": 15,
+        "SATE": 119,
+        "TRSN": 2,
+        "CATE": 7,
+        "GBTE": 5,
+        "WHIB": 1,
+        "GBHE": 1
+      },
+      "category_counts": {
+        "BRPE_WBN": 62,
+        "BRPE_EmptyNest": 5,
+        "BRPE_AbandNest": 1,
+        "BRPE_OtherAdultsInColony": 40,
+        "LAGU_Site": 546,
+        "LAGU_OtherAdultsInColony": 251,
+        "TRHE_Site": 24,
+        "TRHE_ChickNestwithoutAdult": 1,
+        "TRHE_OtherAdultsInColony": 3,
+        "SNEG_Site": 5,
+        "ROYT_Site": 251,
+        "ROYT_OtherAdultsInColony": 55,
+        "ULTE_OtherAdultsInColony": 3,
+        "UNTE_OtherAdultsInColony": 15,
+        "SATE_Site": 80,
+        "SATE_OtherAdultsInColony": 39,
+        "TRSN_AbandNest": 2,
+        "CATE_Site": 2,
+        "CATE_OtherAdultsInColony": 5,
+        "GBTE_Site": 5,
+        "WHIB_OtherAdultsInColony": 1,
+        "GBHE_OtherAdultsInColony": 1
+      },
+      "total_birds": 1397,
+      "n_species": 13,
+      "colony": "Felicity Island",
+      "year": 2012,
+      "dotter": "KMR",
+      "gps": [
+        29.2558,
+        -90.44
+      ]
+    },
+    "legend_colors": [
+      {
+        "y_center": 44.2,
+        "primary_color": "orange",
+        "hsv": [
+          19.1,
+          124.6,
+          104.7
+        ],
+        "h_std": 7.0,
+        "total_area": 119,
+        "n_clusters": 3
+      },
+      {
+        "y_center": 182.0,
+        "primary_color": "blue",
+        "hsv": [
+          112.3,
+          166.1,
+          199.8
+        ],
+        "h_std": 26.5,
+        "total_area": 41080,
+        "n_clusters": 56
+      },
+      {
+        "y_center": 305.0,
+        "primary_color": "cyan",
+        "hsv": [
+          88.7,
+          217.8,
+          123.0
+        ],
+        "h_std": 1.3,
+        "total_area": 121,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 395.7,
+        "primary_color": "orange",
+        "hsv": [
+          19.7,
+          211.7,
+          182.3
+        ],
+        "h_std": 54.4,
+        "total_area": 16938,
+        "n_clusters": 26
+      },
+      {
+        "y_center": 535.7,
+        "primary_color": "green",
+        "hsv": [
+          42.8,
+          193.6,
+          168.8
+        ],
+        "h_std": 38.2,
+        "total_area": 4068,
+        "n_clusters": 42
+      }
+    ],
+    "species_colors": {
+      "LAGU": {
+        "color_name": "orange",
+        "h_mean": 19.7,
+        "s_mean": 211.7,
+        "v_mean": 182.3,
+        "h_std": 54.4,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "ROYT": {
+        "color_name": "blue",
+        "h_mean": 112.3,
+        "s_mean": 166.1,
+        "v_mean": 199.8,
+        "h_std": 26.5,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "SATE": {
+        "color_name": "cyan",
+        "h_mean": 88.7,
+        "s_mean": 217.8,
+        "v_mean": 123.0,
+        "h_std": 5.0,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "BRPE": {
+        "color_name": "green",
+        "h_mean": 42.8,
+        "s_mean": 193.6,
+        "v_mean": 168.8,
+        "h_std": 38.2,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      }
+    }
+  },
+  "B": {
+    "ground_truth": {
+      "species_counts": {
+        "BRPE": 49,
+        "LAGU": 16,
+        "CANG": 14,
+        "WHIB": 7,
+        "ROYT": 4,
+        "SATE": 1,
+        "UNDU": 2
+      },
+      "category_counts": {
+        "BRPE_WBN": 24,
+        "BRPE_ChickNestwithoutAdult": 2,
+        "BRPE_OtherAdultsInColony": 22,
+        "BRPE_OtherImmInColony": 1,
+        "LAGU_Site": 4,
+        "LAGU_OtherAdultsInColony": 12,
+        "CANG_OtherAdultsInColony": 14,
+        "WHIB_OtherAdultsInColony": 7,
+        "ROYT_OtherAdultsInColony": 4,
+        "SATE_OtherAdultsInColony": 1,
+        "UNDU_OtherAdultsInColony": 2
+      },
+      "total_birds": 93,
+      "n_species": 7,
+      "colony": "Gaillard Island",
+      "year": 2011,
+      "dotter": "MWP",
+      "gps": [
+        30.5063,
+        -88.03619999999998
+      ]
+    },
+    "legend_colors": [
+      {
+        "y_center": 54.1,
+        "primary_color": "red",
+        "hsv": [
+          0.7,
+          193.5,
+          169.4
+        ],
+        "h_std": 81.6,
+        "total_area": 119,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 76.3,
+        "primary_color": "red",
+        "hsv": [
+          0.0,
+          191.6,
+          156.2
+        ],
+        "h_std": 84.8,
+        "total_area": 135,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 114.3,
+        "primary_color": "yellow",
+        "hsv": [
+          37.6,
+          99.3,
+          92.6
+        ],
+        "h_std": 3.1,
+        "total_area": 251,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 139.4,
+        "primary_color": "blue",
+        "hsv": [
+          111.6,
+          131.6,
+          214.4
+        ],
+        "h_std": 17.0,
+        "total_area": 29169,
+        "n_clusters": 3
+      },
+      {
+        "y_center": 166.3,
+        "primary_color": "green",
+        "hsv": [
+          66.6,
+          203.1,
+          199.0
+        ],
+        "h_std": 28.5,
+        "total_area": 483,
+        "n_clusters": 4
+      },
+      {
+        "y_center": 209.9,
+        "primary_color": "red",
+        "hsv": [
+          0.2,
+          242.2,
+          227.0
+        ],
+        "h_std": 72.3,
+        "total_area": 347,
+        "n_clusters": 5
+      },
+      {
+        "y_center": 245.2,
+        "primary_color": "red",
+        "hsv": [
+          179.3,
+          233.9,
+          211.6
+        ],
+        "h_std": 73.9,
+        "total_area": 22,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 284.4,
+        "primary_color": "cyan",
+        "hsv": [
+          91.1,
+          200.0,
+          190.7
+        ],
+        "h_std": 6.3,
+        "total_area": 420,
+        "n_clusters": 7
+      },
+      {
+        "y_center": 324.6,
+        "primary_color": "red",
+        "hsv": [
+          0.8,
+          202.3,
+          176.5
+        ],
+        "h_std": 85.4,
+        "total_area": 235,
+        "n_clusters": 2
+      },
+      {
+        "y_center": 384.0,
+        "primary_color": "magenta",
+        "hsv": [
+          146.0,
+          112.2,
+          140.2
+        ],
+        "h_std": 47.6,
+        "total_area": 28,
+        "n_clusters": 2
+      },
+      {
+        "y_center": 405.1,
+        "primary_color": "cyan",
+        "hsv": [
+          89.1,
+          211.4,
+          245.9
+        ],
+        "h_std": 1.5,
+        "total_area": 133,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 434.0,
+        "primary_color": "yellow",
+        "hsv": [
+          29.4,
+          189.7,
+          250.3
+        ],
+        "h_std": 1.2,
+        "total_area": 382,
+        "n_clusters": 3
+      },
+      {
+        "y_center": 471.2,
+        "primary_color": "red",
+        "hsv": [
+          1.9,
+          201.9,
+          177.8
+        ],
+        "h_std": 78.7,
+        "total_area": 534,
+        "n_clusters": 2
+      }
+    ],
+    "species_colors": {
+      "BRPE": {
+        "color_name": "red",
+        "h_mean": 1.9,
+        "s_mean": 201.9,
+        "v_mean": 177.8,
+        "h_std": 78.7,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "LAGU": {
+        "color_name": "yellow",
+        "h_mean": 29.4,
+        "s_mean": 189.7,
+        "v_mean": 250.3,
+        "h_std": 5.0,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "CANG": {
+        "color_name": "blue",
+        "h_mean": 111.6,
+        "s_mean": 131.6,
+        "v_mean": 214.4,
+        "h_std": 17.0,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "WHIB": {
+        "color_name": "green",
+        "h_mean": 66.6,
+        "s_mean": 203.1,
+        "v_mean": 199.0,
+        "h_std": 28.5,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "ROYT": {
+        "color_name": "cyan",
+        "h_mean": 91.1,
+        "s_mean": 200.0,
+        "v_mean": 190.7,
+        "h_std": 6.3,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "UNDU": {
+        "color_name": "magenta",
+        "h_mean": 146.0,
+        "s_mean": 112.2,
+        "v_mean": 140.2,
+        "h_std": 47.6,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      }
+    }
+  },
+  "C": {
+    "ground_truth": {
+      "species_counts": {
+        "BRPE": 10,
+        "GREG": 11,
+        "LAGU": 17,
+        "TRHE": 4,
+        "GBHE": 5,
+        "WHIB": 35,
+        "NECO": 20,
+        "UNWA": 2,
+        "ROSP": 5,
+        "WFIB": 2,
+        "SNEG": 4
+      },
+      "category_counts": {
+        "BRPE_WBN": 1,
+        "BRPE_ChickNestwithoutAdult": 2,
+        "BRPE_OtherAdultsInColony": 7,
+        "GREG_ChickNestwithoutAdult": 1,
+        "GREG_Brood": 7,
+        "GREG_OtherAdultsInColony": 3,
+        "LAGU_Site": 13,
+        "LAGU_Brood": 1,
+        "LAGU_OtherAdultsInColony": 3,
+        "TRHE_WBN": 4,
+        "GBHE_ChickNestwithoutAdult": 4,
+        "GBHE_Brood": 1,
+        "WHIB_WBN": 34,
+        "WHIB_Brood": 1,
+        "NECO_WBN": 3,
+        "NECO_OtherAdultsInColony": 17,
+        "UNWA_EmptyNest": 2,
+        "ROSP_WBN": 5,
+        "WFIB_OtherAdultsInColony": 2,
+        "SNEG_WBN": 4
+      },
+      "total_birds": 115,
+      "n_species": 11,
+      "colony": "North Deer Island",
+      "year": 2010,
+      "dotter": "KMR",
+      "gps": [
+        29.28519,
+        -94.92462
+      ]
+    },
+    "legend_colors": [
+      {
+        "y_center": 267.2,
+        "primary_color": "blue",
+        "hsv": [
+          109.6,
+          160.8,
+          214.8
+        ],
+        "h_std": 19.4,
+        "total_area": 51301,
+        "n_clusters": 223
+      },
+      {
+        "y_center": 598.8,
+        "primary_color": "red",
+        "hsv": [
+          1.3,
+          161.0,
+          182.3
+        ],
+        "h_std": 83.3,
+        "total_area": 3494,
+        "n_clusters": 19
+      }
+    ],
+    "species_colors": {
+      "WHIB": {
+        "color_name": "blue",
+        "h_mean": 109.6,
+        "s_mean": 160.8,
+        "v_mean": 214.8,
+        "h_std": 19.4,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "NECO": {
+        "color_name": "red",
+        "h_mean": 1.3,
+        "s_mean": 161.0,
+        "v_mean": 182.3,
+        "h_std": 83.3,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      }
+    }
+  },
+  "D": {
+    "ground_truth": {
+      "species_counts": {
+        "BRPE": 285,
+        "GREG": 4,
+        "LAGU": 244,
+        "ROYT": 1,
+        "SATE": 2,
+        "TRHE": 1,
+        "SNEG": 1
+      },
+      "category_counts": {
+        "BRPE_WBN": 169,
+        "BRPE_OtherAdultsInColony": 116,
+        "GREG_Site": 3,
+        "GREG_OtherAdultsInColony": 1,
+        "LAGU_Site": 88,
+        "LAGU_OtherAdultsInColony": 156,
+        "ROYT_OtherAdultsInColony": 1,
+        "SATE_OtherAdultsInColony": 2,
+        "TRHE_Site": 1,
+        "SNEG_Site": 1
+      },
+      "total_birds": 538,
+      "n_species": 7,
+      "colony": "Raccoon Island",
+      "year": 2011,
+      "dotter": "SLF",
+      "gps": [
+        29.0505,
+        -90.9266
+      ]
+    },
+    "legend_colors": [
+      {
+        "y_center": 120.4,
+        "primary_color": "orange",
+        "hsv": [
+          15.1,
+          176.1,
+          193.3
+        ],
+        "h_std": 57.4,
+        "total_area": 8523,
+        "n_clusters": 81
+      },
+      {
+        "y_center": 278.7,
+        "primary_color": "green",
+        "hsv": [
+          57.2,
+          191.6,
+          227.1
+        ],
+        "h_std": 5.0,
+        "total_area": 104,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 341.0,
+        "primary_color": "green",
+        "hsv": [
+          59.4,
+          204.9,
+          232.1
+        ],
+        "h_std": 3.1,
+        "total_area": 1000,
+        "n_clusters": 16
+      },
+      {
+        "y_center": 516.4,
+        "primary_color": "red",
+        "hsv": [
+          0.1,
+          175.6,
+          190.3
+        ],
+        "h_std": 85.9,
+        "total_area": 11984,
+        "n_clusters": 98
+      },
+      {
+        "y_center": 687.8,
+        "primary_color": "red",
+        "hsv": [
+          179.8,
+          228.9,
+          113.3
+        ],
+        "h_std": 88.0,
+        "total_area": 50,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 722.5,
+        "primary_color": "magenta",
+        "hsv": [
+          148.3,
+          156.5,
+          209.0
+        ],
+        "h_std": 3.1,
+        "total_area": 12,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 739.1,
+        "primary_color": "blue",
+        "hsv": [
+          119.3,
+          215.5,
+          207.5
+        ],
+        "h_std": 1.7,
+        "total_area": 63,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 755.9,
+        "primary_color": "cyan",
+        "hsv": [
+          90.3,
+          187.7,
+          227.3
+        ],
+        "h_std": 1.8,
+        "total_area": 70,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 774.5,
+        "primary_color": "cyan",
+        "hsv": [
+          89.3,
+          134.5,
+          203.6
+        ],
+        "h_std": 3.0,
+        "total_area": 16,
+        "n_clusters": 1
+      },
+      {
+        "y_center": 790.0,
+        "primary_color": "yellow",
+        "hsv": [
+          29.7,
+          185.2,
+          228.0
+        ],
+        "h_std": 1.3,
+        "total_area": 71,
+        "n_clusters": 1
+      }
+    ],
+    "species_colors": {
+      "BRPE": {
+        "color_name": "orange",
+        "h_mean": 15.1,
+        "s_mean": 176.1,
+        "v_mean": 193.3,
+        "h_std": 57.4,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "LAGU": {
+        "color_name": "green",
+        "h_mean": 59.4,
+        "s_mean": 204.9,
+        "v_mean": 232.1,
+        "h_std": 5.0,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "GREG": {
+        "color_name": "red",
+        "h_mean": 0.1,
+        "s_mean": 175.6,
+        "v_mean": 190.3,
+        "h_std": 85.9,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "SATE": {
+        "color_name": "blue",
+        "h_mean": 119.3,
+        "s_mean": 215.5,
+        "v_mean": 207.5,
+        "h_std": 5.0,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "ROYT": {
+        "color_name": "cyan",
+        "h_mean": 90.3,
+        "s_mean": 187.7,
+        "v_mean": 227.3,
+        "h_std": 5.0,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      },
+      "TRHE": {
+        "color_name": "yellow",
+        "h_mean": 29.7,
+        "s_mean": 185.2,
+        "v_mean": 228.0,
+        "h_std": 5.0,
+        "s_std": 30.0,
+        "v_std": 30.0,
+        "source": "dialog_color_cluster",
+        "match_confidence": "positional"
+      }
+    }
+  }
+}

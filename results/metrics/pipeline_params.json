@@ -1,0 +1,82 @@
+{
+  "total_species": 102,
+  "top_species": [
+    "LAGU",
+    "SATE",
+    "ROYT",
+    "BRPE",
+    "WHIB",
+    "BLSK",
+    "TRHE",
+    "FOTE",
+    "SNEG",
+    "GREG"
+  ],
+  "species_frequency": {
+    "LAGU": 855411,
+    "SATE": 450440,
+    "ROYT": 393894,
+    "BRPE": 387589,
+    "WHIB": 121546,
+    "BLSK": 107876,
+    "TRHE": 67826,
+    "FOTE": 42721,
+    "SNEG": 32464,
+    "GREG": 30179,
+    "ROSA": 29008,
+    "CATE": 17173,
+    "GBTE": 14900,
+    "SOTE": 14159,
+    "UNTE": 9501,
+    "ROSP": 9277,
+    "CAEG": 8200,
+    "DCCO": 5441,
+    "AWPE": 5339,
+    "BCNH": 4419
+  },
+  "total_annotators": 18,
+  "top_annotators": [
+    "MWP",
+    "KMR",
+    "PJC",
+    "SLF",
+    "KLC"
+  ],
+  "study_annotators": [
+    "KMR",
+    "SLF",
+    "MWP"
+  ],
+  "median_birds_per_image": 61,
+  "p25_birds": 25,
+  "p75_birds": 142,
+  "p95_birds": 520,
+  "max_birds": 7346,
+  "empty_images": 90,
+  "single_area_pct": 6.6,
+  "multi_area_pct": 93.4,
+  "active_categories": [
+    "WBN",
+    "PBN",
+    "Site",
+    "EmptyNest",
+    "ChickNestwithoutAdult",
+    "AbandNest",
+    "Brood",
+    "OtherAdultsInColony",
+    "Chicks/Nestlings",
+    "Territory",
+    "OtherBirds",
+    "ChickNest"
+  ],
+  "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2015,
+    2018,
+    2021
+  ],
+  "primary_habitat_fill_pct": 0.2
+}

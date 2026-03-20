@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "sift_images": 19,
+  "uniform_excluded": 15,
+  "train_size": 920,
+  "test_size": 55,
+  "train_time": 160.0,
+  "results": {
+    "C_original.jpg": {
+      "gt": 55,
+      "map_type": "SIFT",
+      "pre_n": 71,
+      "pre_h": 0,
+      "pre_max": 0.233,
+      "sift_n": 114,
+      "sift_h": 0,
+      "sift_max": 0.29
+    },
+    "batch_16_original.jpg": {
+      "gt": 0,
+      "map_type": "SIFT",
+      "pre_n": 37,
+      "pre_h": 2,
+      "pre_max": 0.32,
+      "sift_n": 93,
+      "sift_h": 3,
+      "sift_max": 0.335
+    }
+  }
+}

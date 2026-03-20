@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "train_time": 246.2,
+  "train_size": 3401,
+  "test_size": 514,
+  "skipped": 0,
+  "results": {
+    "B_original.jpg": {
+      "gt": 64,
+      "pre_n": 52,
+      "pre_h": 2,
+      "pre_max": 0.376,
+      "fix_n": 75,
+      "fix_h": 0,
+      "fix_max": 0.232
+    },
+    "batch_09_original.jpg": {
+      "gt": 17,
+      "pre_n": 44,
+      "pre_h": 0,
+      "pre_max": 0.191,
+      "fix_n": 113,
+      "fix_h": 0,
+      "fix_max": 0.187
+    },
+    "batch_16_original.jpg": {
+      "gt": 35,
+      "pre_n": 37,
+      "pre_h": 2,
+      "pre_max": 0.32,
+      "fix_n": 88,
+      "fix_h": 0,
+      "fix_max": 0.239
+    },
+    "batch_18_original.jpg": {
+      "gt": 85,
+      "pre_n": 87,
+      "pre_h": 0,
+      "pre_max": 0.282,
+      "fix_n": 99,
+      "fix_h": 0,
+      "fix_max": 0.203
+    },
+    "batch_24_original.jpg": {
+      "gt": 306,
+      "pre_n": 121,
+      "pre_h": 1,
+      "pre_max": 0.345,
+      "fix_n": 144,
+      "fix_h": 0,
+      "fix_max": 0.207
+    },
+    "batch_28_original.jpg": {
+      "gt": 7,
+      "pre_n": 31,
+      "pre_h": 0,
+      "pre_max": 0.295,
+      "fix_n": 54,
+      "fix_h": 0,
+      "fix_max": 0.236
+    }
+  }
+}

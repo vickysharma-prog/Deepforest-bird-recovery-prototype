@@ -1,0 +1,110 @@
+{
+  "MWP": {
+    "n_images": 3647,
+    "total_birds": 571749,
+    "avg_birds_per_img": 156.8,
+    "n_species": 55
+  },
+  "KMR": {
+    "n_images": 2126,
+    "total_birds": 379983,
+    "avg_birds_per_img": 178.7,
+    "n_species": 48
+  },
+  "PJC": {
+    "n_images": 1969,
+    "total_birds": 333541,
+    "avg_birds_per_img": 169.4,
+    "n_species": 48
+  },
+  "SLF": {
+    "n_images": 1724,
+    "total_birds": 207667,
+    "avg_birds_per_img": 120.5,
+    "n_species": 38
+  },
+  "KLC": {
+    "n_images": 1668,
+    "total_birds": 190309,
+    "avg_birds_per_img": 114.1,
+    "n_species": 33
+  },
+  "RRR": {
+    "n_images": 1401,
+    "total_birds": 198609,
+    "avg_birds_per_img": 141.8,
+    "n_species": 31
+  },
+  "EAE": {
+    "n_images": 1217,
+    "total_birds": 106264,
+    "avg_birds_per_img": 87.3,
+    "n_species": 39
+  },
+  "RSW": {
+    "n_images": 1115,
+    "total_birds": 68472,
+    "avg_birds_per_img": 61.4,
+    "n_species": 38
+  },
+  "NY": {
+    "n_images": 658,
+    "total_birds": 90642,
+    "avg_birds_per_img": 137.8,
+    "n_species": 46
+  },
+  "PAG": {
+    "n_images": 511,
+    "total_birds": 62075,
+    "avg_birds_per_img": 121.5,
+    "n_species": 36
+  },
+  "BMR": {
+    "n_images": 510,
+    "total_birds": 93241,
+    "avg_birds_per_img": 182.8,
+    "n_species": 33
+  },
+  "EAM": {
+    "n_images": 492,
+    "total_birds": 73509,
+    "avg_birds_per_img": 149.4,
+    "n_species": 30
+  },
+  "JND": {
+    "n_images": 376,
+    "total_birds": 110814,
+    "avg_birds_per_img": 294.7,
+    "n_species": 26
+  },
+  "KKN": {
+    "n_images": 298,
+    "total_birds": 31356,
+    "avg_birds_per_img": 105.2,
+    "n_species": 29
+  },
+  "WAW": {
+    "n_images": 195,
+    "total_birds": 8858,
+    "avg_birds_per_img": 45.4,
+    "n_species": 26
+  },
+  "JRM": {
+    "n_images": 191,
+    "total_birds": 36298,
+    "avg_birds_per_img": 190.0,
+    "n_species": 19
+  },
+  "JNP": {
+    "n_images": 158,
+    "total_birds": 66432,
+    "avg_birds_per_img": 420.5,
+    "n_species": 14
+  },
+  "DLJ": {
+    "n_images": 51,
+    "total_birds": 8716,
+    "avg_birds_per_img": 170.9,
+    "n_species": 12
+  }
+}

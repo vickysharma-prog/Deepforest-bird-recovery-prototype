@@ -1,0 +1,156 @@
+{
+  "BASE_DIR": "/content/prototype",
+  "BUCKET": "https://twi-aviandata.s3.amazonaws.com",
+  "CSV_PATH": "/content/prototype/data/csv/avianData20102021.csv.gz",
+  "DIRS": {
+    "data": "/content/prototype/data",
+    "csv": "/content/prototype/data/csv",
+    "avian": "/content/prototype/data/avian_monitoring",
+    "dotted": "/content/prototype/data/dotted_images",
+    "batch": "/content/prototype/data/batch_images",
+    "outputs": "/content/prototype/outputs",
+    "decomposed": "/content/prototype/outputs/decomposed",
+    "detections": "/content/prototype/outputs/detections",
+    "mapped": "/content/prototype/outputs/mapped",
+    "training": "/content/prototype/outputs/training",
+    "figures": "/content/prototype/outputs/figures",
+    "checkpoints": "/content/prototype/outputs/checkpoints"
+  },
+  "STUDY_IMAGES": {
+    "A": {
+      "screenshot_path": "/content/prototype/data/avian_monitoring/A_screenshot.jpg",
+      "original_path": "/content/prototype/data/avian_monitoring/A_original.jpg",
+      "screenshot_size": [
+        1162,
+        638
+      ],
+      "original_size": [
+        3504,
+        2336
+      ],
+      "scale_approx": 3.02,
+      "total_birds": 1388,
+      "n_species": 13,
+      "ground_truth": {
+        "BRPE": 108,
+        "LAGU": 797,
+        "TRHE": 28,
+        "SNEG": 5,
+        "ROYT": 306,
+        "ULTE": 3,
+        "UNTE": 15,
+        "SATE": 119,
+        "TRSN": 2,
+        "CATE": 7,
+        "GBTE": 5,
+        "WHIB": 1,
+        "GBHE": 1
+      },
+      "colony": "Felicity Island",
+      "year": 2012,
+      "dotter": "KMR",
+      "note": "HARD - dense, 13 species",
+      "screenshot_s3": "avian_monitoring/screenshots/2012/Terrebonne Bay/Felicity Island/27May12Camera2-Card1-0575.jpg",
+      "original_s3": "avian_monitoring/high_resolution_photos/2012/Terrebonne Bay/Felicity Island/27May12Camera2-Card1-0575.jpg"
+    },
+    "B": {
+      "screenshot_path": "/content/prototype/data/avian_monitoring/B_screenshot.jpg",
+      "original_path": "/content/prototype/data/avian_monitoring/B_original.jpg",
+      "screenshot_size": [
+        1408,
+        649
+      ],
+      "original_size": [
+        3504,
+        2336
+      ],
+      "scale_approx": 2.49,
+      "total_birds": 91,
+      "n_species": 7,
+      "ground_truth": {
+        "BRPE": 49,
+        "LAGU": 16,
+        "CANG": 14,
+        "WHIB": 7,
+        "ROYT": 4,
+        "SATE": 1,
+        "UNDU": 2
+      },
+      "colony": "Gaillard Island",
+      "year": 2011,
+      "dotter": "MWP",
+      "note": "MEDIUM - sparse, watermarks",
+      "screenshot_s3": "avian_monitoring/screenshots/2011/Mobile Bay Interior/Gaillard Island/20May11Camera2-Card8-0421.jpg",
+      "original_s3": "avian_monitoring/high_resolution_photos/2011/Mobile Bay Interior/Gaillard Island/20May11Camera2-Card8-0421.jpg"
+    },
+    "C": {
+      "screenshot_path": "/content/prototype/data/avian_monitoring/C_screenshot.jpg",
+      "original_path": "/content/prototype/data/avian_monitoring/C_original.jpg",
+      "screenshot_size": [
+        1210,
+        641
+      ],
+      "original_size": [
+        3504,
+        2336
+      ],
+      "scale_approx": 2.9,
+      "total_birds": 96,
+      "n_species": 11,
+      "ground_truth": {
+        "BRPE": 10,
+        "GREG": 11,
+        "LAGU": 17,
+        "TRHE": 4,
+        "GBHE": 5,
+        "WHIB": 35,
+        "NECO": 20,
+        "UNWA": 2,
+        "ROSP": 5,
+        "WFIB": 2,
+        "SNEG": 4
+      },
+      "colony": "North Deer Island",
+      "year": 2010,
+      "dotter": "KMR",
+      "note": "HARDEST - green on green",
+      "screenshot_s3": "avian_monitoring/screenshots/2010/Galveston/North Deer Island/25June10Camera2-Card1-0357.jpg",
+      "original_s3": "avian_monitoring/high_resolution_photos/2010/Galveston/North Deer Island/25June10Camera2-Card1-0357.jpg"
+    },
+    "D": {
+      "screenshot_path": "/content/prototype/data/avian_monitoring/D_screenshot.jpg",
+      "original_path": "/content/prototype/data/avian_monitoring/D_original.jpg",
+      "screenshot_size": [
+        1580,
+        840
+      ],
+      "original_size": [
+        4752,
+        3168
+      ],
+      "scale_approx": 3.01,
+      "total_birds": 538,
+      "n_species": 7,
+      "ground_truth": {
+        "BRPE": 285,
+        "GREG": 4,
+        "LAGU": 244,
+        "ROYT": 1,
+        "SATE": 2,
+        "TRHE": 1,
+        "SNEG": 1
+      },
+      "colony": "Raccoon Island",
+      "year": 2011,
+      "dotter": "SLF",
+      "note": "EASY - sandy, high contrast",
+      "screenshot_s3": "avian_monitoring/screenshots/2011/Terrebonne Bay/Raccoon Island/17May11Camera2-Card2-418.jpg",
+      "original_s3": "avian_monitoring/high_resolution_photos/2011/Terrebonne Bay/Raccoon Island/17May11Camera2-Card2-418.jpg"
+    }
+  },
+  "CSV_SHAPE": [
+    49204,
+    60
+  ],
+  "TOTAL_UNIQUE_IMAGES": 18304
+}

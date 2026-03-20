@@ -1,0 +1,76 @@
+{
+  "count_accuracy": {
+    "total_expected": 2143,
+    "total_detected": 1171,
+    "overall_accuracy": 54.6
+  },
+  "position_plausibility": {
+    "overall": 97.8,
+    "high_confidence_pct": 80.2,
+    "likely_false_positive_pct": 2.2,
+    "per_image": {
+      "D": {
+        "total": 336,
+        "high_s": 280,
+        "medium_s": 40,
+        "low_s": 16,
+        "high_pct": 83.3,
+        "plausibility": 95.2
+      },
+      "B": {
+        "total": 64,
+        "high_s": 57,
+        "medium_s": 6,
+        "low_s": 1,
+        "high_pct": 89.1,
+        "plausibility": 98.4
+      },
+      "A": {
+        "total": 716,
+        "high_s": 570,
+        "medium_s": 140,
+        "low_s": 6,
+        "high_pct": 79.6,
+        "plausibility": 99.2
+      },
+      "C": {
+        "total": 55,
+        "high_s": 32,
+        "medium_s": 20,
+        "low_s": 3,
+        "high_pct": 58.2,
+        "plausibility": 94.5
+      }
+    }
+  },
+  "spatial_distribution": {
+    "D": {
+      "x_spread": 0.275,
+      "y_spread": 0.269,
+      "coverage": 88.0,
+      "mean_nn_dist": 18.1,
+      "n_dots": 336
+    },
+    "B": {
+      "x_spread": 0.272,
+      "y_spread": 0.217,
+      "coverage": 52.0,
+      "mean_nn_dist": 28.4,
+      "n_dots": 64
+    },
+    "A": {
+      "x_spread": 0.248,
+      "y_spread": 0.249,
+      "coverage": 92.0,
+      "mean_nn_dist": 10.0,
+      "n_dots": 716
+    },
+    "C": {
+      "x_spread": 0.369,
+      "y_spread": 0.222,
+      "coverage": 64.0,
+      "mean_nn_dist": 27.5,
+      "n_dots": 55
+    }
+  }
+}

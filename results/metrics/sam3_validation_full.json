@@ -1,0 +1,1521 @@
+{
+  "bird_validation": {
+    "study_D": {
+      "colony": "Raccoon Island",
+      "year": 2011,
+      "source": "study",
+      "sam_detections": 78,
+      "sam_high_conf": 3,
+      "n_dots": 336,
+      "matched": 88,
+      "matched_iou": 45,
+      "matched_dist": 43,
+      "match_pct": 26.2,
+      "copper": 28,
+      "resized": true
+    },
+    "study_B": {
+      "colony": "Gaillard Island",
+      "year": 2011,
+      "source": "study",
+      "sam_detections": 59,
+      "sam_high_conf": 32,
+      "n_dots": 64,
+      "matched": 27,
+      "matched_iou": 5,
+      "matched_dist": 22,
+      "match_pct": 42.2,
+      "copper": 26,
+      "resized": true
+    },
+    "study_A": {
+      "colony": "Felicity Island",
+      "year": 2012,
+      "source": "study",
+      "sam_detections": 30,
+      "sam_high_conf": 11,
+      "n_dots": 716,
+      "matched": 27,
+      "matched_iou": 6,
+      "matched_dist": 21,
+      "match_pct": 3.8,
+      "copper": 25,
+      "resized": true
+    },
+    "study_C": {
+      "colony": "North Deer Island",
+      "year": 2010,
+      "source": "study",
+      "sam_detections": 62,
+      "sam_high_conf": 18,
+      "n_dots": 55,
+      "matched": 24,
+      "matched_iou": 11,
+      "matched_dist": 13,
+      "match_pct": 43.6,
+      "copper": 38,
+      "resized": true
+    },
+    "batch_00": {
+      "colony": "Chester Island",
+      "year": 2010,
+      "source": "batch",
+      "sam_detections": 58,
+      "sam_high_conf": 35,
+      "n_dots": 16,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0.0,
+      "copper": 58,
+      "resized": true
+    },
+    "batch_01": {
+      "colony": "Queen Bess Island",
+      "year": 2010,
+      "source": "batch",
+      "sam_detections": 126,
+      "sam_high_conf": 87,
+      "n_dots": 81,
+      "matched": 5,
+      "matched_iou": 2,
+      "matched_dist": 3,
+      "match_pct": 6.2,
+      "copper": 122,
+      "resized": true
+    },
+    "batch_02": {
+      "colony": "Skimmer Island",
+      "year": 2011,
+      "source": "batch",
+      "sam_detections": 94,
+      "sam_high_conf": 3,
+      "n_dots": 34,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0.0,
+      "copper": 90,
+      "resized": true
+    },
+    "batch_03": {
+      "colony": "Biloxi North 26",
+      "year": 2011,
+      "source": "batch",
+      "sam_detections": 45,
+      "sam_high_conf": 10,
+      "n_dots": 200,
+      "matched": 26,
+      "matched_iou": 4,
+      "matched_dist": 22,
+      "match_pct": 13.0,
+      "copper": 31,
+      "resized": true
+    },
+    "batch_04": {
+      "colony": "Queen Bess Island",
+      "year": 2012,
+      "source": "batch",
+      "sam_detections": 117,
+      "sam_high_conf": 96,
+      "n_dots": 24,
+      "matched": 5,
+      "matched_iou": 0,
+      "matched_dist": 5,
+      "match_pct": 20.8,
+      "copper": 110,
+      "resized": true
+    },
+    "batch_05": {
+      "colony": "Half Moon Island",
+      "year": 2013,
+      "source": "batch",
+      "sam_detections": 121,
+      "sam_high_conf": 94,
+      "n_dots": 23,
+      "matched": 9,
+      "matched_iou": 2,
+      "matched_dist": 7,
+      "match_pct": 39.1,
+      "copper": 111,
+      "resized": true
+    },
+    "batch_06": {
+      "colony": "Drum Bay Island",
+      "year": 2013,
+      "source": "batch",
+      "sam_detections": 67,
+      "sam_high_conf": 58,
+      "n_dots": 18,
+      "matched": 1,
+      "matched_iou": 0,
+      "matched_dist": 1,
+      "match_pct": 5.6,
+      "copper": 66,
+      "resized": true
+    },
+    "batch_07": {
+      "colony": "Deadman Point",
+      "year": 2015,
+      "source": "batch",
+      "sam_detections": 64,
+      "sam_high_conf": 7,
+      "n_dots": 44,
+      "matched": 2,
+      "matched_iou": 2,
+      "matched_dist": 0,
+      "match_pct": 4.5,
+      "copper": 62,
+      "resized": true
+    },
+    "batch_08": {
+      "colony": "Birdsfoot West 6 B",
+      "year": 2015,
+      "source": "batch",
+      "sam_detections": 117,
+      "sam_high_conf": 100,
+      "n_dots": 17,
+      "matched": 2,
+      "matched_iou": 0,
+      "matched_dist": 2,
+      "match_pct": 11.8,
+      "copper": 115,
+      "resized": true
+    },
+    "batch_09": {
+      "colony": "Raccoon Island",
+      "year": 2018,
+      "source": "batch",
+      "sam_detections": 0,
+      "sam_high_conf": 0,
+      "n_dots": 367,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0,
+      "copper": 0,
+      "resized": true
+    },
+    "batch_10": {
+      "colony": "Beauregard Island",
+      "year": 2018,
+      "source": "batch",
+      "sam_detections": 91,
+      "sam_high_conf": 61,
+      "n_dots": 11,
+      "matched": 3,
+      "matched_iou": 1,
+      "matched_dist": 2,
+      "match_pct": 27.3,
+      "copper": 89,
+      "resized": true
+    },
+    "batch_11": {
+      "colony": "Bayou Pintou",
+      "year": 2021,
+      "source": "batch",
+      "sam_detections": 48,
+      "sam_high_conf": 34,
+      "n_dots": 55,
+      "matched": 7,
+      "matched_iou": 0,
+      "matched_dist": 7,
+      "match_pct": 12.7,
+      "copper": 38,
+      "resized": true
+    },
+    "batch_12": {
+      "colony": "Rabbit Island",
+      "year": 2021,
+      "source": "batch",
+      "sam_detections": 127,
+      "sam_high_conf": 113,
+      "n_dots": 17,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0.0,
+      "copper": 127,
+      "resized": true
+    },
+    "batch_13": {
+      "colony": "Saint Martins Key B",
+      "year": 2010,
+      "source": "batch",
+      "sam_detections": 5,
+      "sam_high_conf": 0,
+      "n_dots": 11,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0.0,
+      "copper": 5,
+      "resized": true
+    },
+    "batch_14": {
+      "colony": "Biloxi South 3",
+      "year": 2011,
+      "source": "batch",
+      "sam_detections": 0,
+      "sam_high_conf": 0,
+      "n_dots": 143,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0,
+      "copper": 0,
+      "resized": true
+    },
+    "batch_15": {
+      "colony": "Lanark Reef West",
+      "year": 2015,
+      "source": "batch",
+      "sam_detections": 4,
+      "sam_high_conf": 0,
+      "n_dots": 35,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0.0,
+      "copper": 4,
+      "resized": true
+    },
+    "batch_16": {
+      "colony": "Raccoon Island",
+      "year": 2011,
+      "source": "batch",
+      "sam_detections": 68,
+      "sam_high_conf": 44,
+      "n_dots": 50,
+      "matched": 9,
+      "matched_iou": 5,
+      "matched_dist": 4,
+      "match_pct": 18.0,
+      "copper": 64,
+      "resized": true
+    },
+    "batch_17": {
+      "colony": "Raccoon Island",
+      "year": 2015,
+      "source": "batch",
+      "sam_detections": 124,
+      "sam_high_conf": 88,
+      "n_dots": 85,
+      "matched": 19,
+      "matched_iou": 5,
+      "matched_dist": 14,
+      "match_pct": 22.4,
+      "copper": 97,
+      "resized": true
+    },
+    "batch_18": {
+      "colony": "Gaillard Island",
+      "year": 2021,
+      "source": "batch",
+      "sam_detections": 78,
+      "sam_high_conf": 69,
+      "n_dots": 3,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0.0,
+      "copper": 78,
+      "resized": true
+    },
+    "batch_19": {
+      "colony": "Queen Bess Island",
+      "year": 2010,
+      "source": "batch",
+      "sam_detections": 0,
+      "sam_high_conf": 0,
+      "n_dots": 37,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0,
+      "copper": 0,
+      "resized": true
+    },
+    "batch_20": {
+      "colony": "Gaillard Island",
+      "year": 2013,
+      "source": "batch",
+      "sam_detections": 56,
+      "sam_high_conf": 43,
+      "n_dots": 36,
+      "matched": 1,
+      "matched_iou": 1,
+      "matched_dist": 0,
+      "match_pct": 2.8,
+      "copper": 54,
+      "resized": true
+    },
+    "batch_21": {
+      "colony": "Barataria Bay 9",
+      "year": 2010,
+      "source": "batch",
+      "sam_detections": 57,
+      "sam_high_conf": 15,
+      "n_dots": 144,
+      "matched": 4,
+      "matched_iou": 2,
+      "matched_dist": 2,
+      "match_pct": 2.8,
+      "copper": 53,
+      "resized": true
+    },
+    "batch_22": {
+      "colony": "Houma Navigation Canal Island",
+      "year": 2021,
+      "source": "batch",
+      "sam_detections": 131,
+      "sam_high_conf": 93,
+      "n_dots": 144,
+      "matched": 63,
+      "matched_iou": 18,
+      "matched_dist": 45,
+      "match_pct": 43.8,
+      "copper": 107,
+      "resized": true
+    },
+    "batch_23": {
+      "colony": "West Bay Bird Island New",
+      "year": 2021,
+      "source": "batch",
+      "sam_detections": 125,
+      "sam_high_conf": 8,
+      "n_dots": 306,
+      "matched": 59,
+      "matched_iou": 13,
+      "matched_dist": 46,
+      "match_pct": 19.3,
+      "copper": 58,
+      "resized": true
+    },
+    "batch_24": {
+      "colony": "Raccoon Island",
+      "year": 2011,
+      "source": "batch",
+      "sam_detections": 153,
+      "sam_high_conf": 74,
+      "n_dots": 770,
+      "matched": 202,
+      "matched_iou": 110,
+      "matched_dist": 92,
+      "match_pct": 26.2,
+      "copper": 100,
+      "resized": true
+    },
+    "batch_25": {
+      "colony": "Isle au Pitre",
+      "year": 2018,
+      "source": "batch",
+      "sam_detections": 144,
+      "sam_high_conf": 113,
+      "n_dots": 8,
+      "matched": 2,
+      "matched_iou": 0,
+      "matched_dist": 2,
+      "match_pct": 25.0,
+      "copper": 141,
+      "resized": true
+    },
+    "batch_26": {
+      "colony": "Dry Bread Island",
+      "year": 2015,
+      "source": "batch",
+      "sam_detections": 63,
+      "sam_high_conf": 36,
+      "n_dots": 15,
+      "matched": 1,
+      "matched_iou": 0,
+      "matched_dist": 1,
+      "match_pct": 6.7,
+      "copper": 61,
+      "resized": true
+    },
+    "batch_27": {
+      "colony": "Chandeleur North C",
+      "year": 2011,
+      "source": "batch",
+      "sam_detections": 3,
+      "sam_high_conf": 0,
+      "n_dots": 7,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0.0,
+      "copper": 3,
+      "resized": true
+    },
+    "batch_28": {
+      "colony": "Sunken Island",
+      "year": 2010,
+      "source": "batch",
+      "sam_detections": 72,
+      "sam_high_conf": 45,
+      "n_dots": 32,
+      "matched": 7,
+      "matched_iou": 3,
+      "matched_dist": 4,
+      "match_pct": 21.9,
+      "copper": 51,
+      "resized": true
+    },
+    "batch_29": {
+      "colony": "Lanark Reef West",
+      "year": 2012,
+      "source": "batch",
+      "sam_detections": 0,
+      "sam_high_conf": 0,
+      "n_dots": 11,
+      "matched": 0,
+      "matched_iou": 0,
+      "matched_dist": 0,
+      "match_pct": 0,
+      "copper": 0,
+      "resized": true
+    }
+  },
+  "habitat": {
+    "study_D": {
+      "primary_habitat": "marsh grass",
+      "confidence": 62.34,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 4,
+          "max_score": 0.605,
+          "value": 2.42
+        },
+        "vegetation": {
+          "detections": 80,
+          "max_score": 0.381,
+          "value": 30.47
+        },
+        "open water": {
+          "detections": 3,
+          "max_score": 0.379,
+          "value": 1.14
+        },
+        "bare ground": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "marsh grass": {
+          "detections": 114,
+          "max_score": 0.547,
+          "value": 62.34
+        }
+      }
+    },
+    "study_B": {
+      "primary_habitat": "vegetation",
+      "confidence": 54.47,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 9,
+          "max_score": 0.477,
+          "value": 4.29
+        },
+        "vegetation": {
+          "detections": 84,
+          "max_score": 0.648,
+          "value": 54.47
+        },
+        "open water": {
+          "detections": 3,
+          "max_score": 0.621,
+          "value": 1.86
+        },
+        "bare ground": {
+          "detections": 15,
+          "max_score": 0.486,
+          "value": 7.29
+        },
+        "marsh grass": {
+          "detections": 56,
+          "max_score": 0.35,
+          "value": 19.58
+        }
+      }
+    },
+    "study_A": {
+      "primary_habitat": "vegetation",
+      "confidence": 75.46,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 3,
+          "max_score": 0.202,
+          "value": 0.61
+        },
+        "vegetation": {
+          "detections": 141,
+          "max_score": 0.535,
+          "value": 75.46
+        },
+        "open water": {
+          "detections": 4,
+          "max_score": 0.766,
+          "value": 3.06
+        },
+        "bare ground": {
+          "detections": 18,
+          "max_score": 0.32,
+          "value": 5.77
+        },
+        "marsh grass": {
+          "detections": 113,
+          "max_score": 0.247,
+          "value": 27.92
+        }
+      }
+    },
+    "study_C": {
+      "primary_habitat": "bare ground",
+      "confidence": 23.71,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 41,
+          "max_score": 0.387,
+          "value": 15.86
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 71,
+          "max_score": 0.334,
+          "value": 23.71
+        },
+        "marsh grass": {
+          "detections": 57,
+          "max_score": 0.318,
+          "value": 18.15
+        }
+      }
+    },
+    "batch_00": {
+      "primary_habitat": "vegetation",
+      "confidence": 109.32,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 145,
+          "max_score": 0.754,
+          "value": 109.32
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 17,
+          "max_score": 0.486,
+          "value": 8.27
+        },
+        "marsh grass": {
+          "detections": 16,
+          "max_score": 0.136,
+          "value": 2.17
+        }
+      }
+    },
+    "batch_01": {
+      "primary_habitat": "marsh grass",
+      "confidence": 43.93,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 46,
+          "max_score": 0.816,
+          "value": 37.55
+        },
+        "open water": {
+          "detections": 4,
+          "max_score": 0.758,
+          "value": 3.03
+        },
+        "bare ground": {
+          "detections": 2,
+          "max_score": 0.141,
+          "value": 0.28
+        },
+        "marsh grass": {
+          "detections": 65,
+          "max_score": 0.676,
+          "value": 43.93
+        }
+      }
+    },
+    "batch_02": {
+      "primary_habitat": "marsh grass",
+      "confidence": 14.7,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 10,
+          "max_score": 0.668,
+          "value": 6.68
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 14,
+          "max_score": 0.168,
+          "value": 2.35
+        },
+        "marsh grass": {
+          "detections": 35,
+          "max_score": 0.42,
+          "value": 14.7
+        }
+      }
+    },
+    "batch_03": {
+      "primary_habitat": "vegetation",
+      "confidence": 35.81,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 48,
+          "max_score": 0.746,
+          "value": 35.81
+        },
+        "open water": {
+          "detections": 5,
+          "max_score": 0.738,
+          "value": 3.69
+        },
+        "bare ground": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "marsh grass": {
+          "detections": 37,
+          "max_score": 0.508,
+          "value": 18.79
+        }
+      }
+    },
+    "batch_04": {
+      "primary_habitat": "marsh grass",
+      "confidence": 50.25,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 39,
+          "max_score": 0.766,
+          "value": 29.86
+        },
+        "open water": {
+          "detections": 1,
+          "max_score": 0.828,
+          "value": 0.83
+        },
+        "bare ground": {
+          "detections": 43,
+          "max_score": 0.734,
+          "value": 31.58
+        },
+        "marsh grass": {
+          "detections": 83,
+          "max_score": 0.605,
+          "value": 50.25
+        }
+      }
+    },
+    "batch_05": {
+      "primary_habitat": "marsh grass",
+      "confidence": 69.38,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 106,
+          "max_score": 0.648,
+          "value": 68.73
+        },
+        "open water": {
+          "detections": 7,
+          "max_score": 0.496,
+          "value": 3.47
+        },
+        "bare ground": {
+          "detections": 43,
+          "max_score": 0.434,
+          "value": 18.64
+        },
+        "marsh grass": {
+          "detections": 120,
+          "max_score": 0.578,
+          "value": 69.38
+        }
+      }
+    },
+    "batch_06": {
+      "primary_habitat": "marsh grass",
+      "confidence": 55.88,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 44,
+          "max_score": 0.723,
+          "value": 31.8
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 100,
+          "max_score": 0.41,
+          "value": 41.02
+        },
+        "marsh grass": {
+          "detections": 96,
+          "max_score": 0.582,
+          "value": 55.88
+        }
+      }
+    },
+    "batch_07": {
+      "primary_habitat": "marsh grass",
+      "confidence": 45.89,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 2,
+          "max_score": 0.142,
+          "value": 0.28
+        },
+        "vegetation": {
+          "detections": 54,
+          "max_score": 0.754,
+          "value": 40.71
+        },
+        "open water": {
+          "detections": 1,
+          "max_score": 0.703,
+          "value": 0.7
+        },
+        "bare ground": {
+          "detections": 2,
+          "max_score": 0.416,
+          "value": 0.83
+        },
+        "marsh grass": {
+          "detections": 66,
+          "max_score": 0.695,
+          "value": 45.89
+        }
+      }
+    },
+    "batch_08": {
+      "primary_habitat": "vegetation",
+      "confidence": 75.94,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 2,
+          "max_score": 0.66,
+          "value": 1.32
+        },
+        "vegetation": {
+          "detections": 90,
+          "max_score": 0.844,
+          "value": 75.94
+        },
+        "open water": {
+          "detections": 6,
+          "max_score": 0.424,
+          "value": 2.54
+        },
+        "bare ground": {
+          "detections": 1,
+          "max_score": 0.244,
+          "value": 0.24
+        },
+        "marsh grass": {
+          "detections": 85,
+          "max_score": 0.773,
+          "value": 65.74
+        }
+      }
+    },
+    "batch_09": {
+      "primary_habitat": "vegetation",
+      "confidence": 54.25,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 62,
+          "max_score": 0.875,
+          "value": 54.25
+        },
+        "open water": {
+          "detections": 2,
+          "max_score": 0.311,
+          "value": 0.62
+        },
+        "bare ground": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "marsh grass": {
+          "detections": 1,
+          "max_score": 0.13,
+          "value": 0.13
+        }
+      }
+    },
+    "batch_10": {
+      "primary_habitat": "marsh grass",
+      "confidence": 95.66,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 4,
+          "max_score": 0.66,
+          "value": 2.64
+        },
+        "vegetation": {
+          "detections": 135,
+          "max_score": 0.676,
+          "value": 91.23
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 1,
+          "max_score": 0.108,
+          "value": 0.11
+        },
+        "marsh grass": {
+          "detections": 158,
+          "max_score": 0.605,
+          "value": 95.66
+        }
+      }
+    },
+    "batch_11": {
+      "primary_habitat": "marsh grass",
+      "confidence": 63.21,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 62,
+          "max_score": 0.867,
+          "value": 53.77
+        },
+        "open water": {
+          "detections": 2,
+          "max_score": 0.148,
+          "value": 0.3
+        },
+        "bare ground": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "marsh grass": {
+          "detections": 87,
+          "max_score": 0.727,
+          "value": 63.21
+        }
+      }
+    },
+    "batch_12": {
+      "primary_habitat": "sandy beach",
+      "confidence": 1.72,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 3,
+          "max_score": 0.574,
+          "value": 1.72
+        },
+        "vegetation": {
+          "detections": 2,
+          "max_score": 0.192,
+          "value": 0.38
+        },
+        "open water": {
+          "detections": 4,
+          "max_score": 0.169,
+          "value": 0.68
+        },
+        "bare ground": {
+          "detections": 1,
+          "max_score": 0.127,
+          "value": 0.13
+        },
+        "marsh grass": {
+          "detections": 2,
+          "max_score": 0.201,
+          "value": 0.4
+        }
+      }
+    },
+    "batch_14": {
+      "primary_habitat": "vegetation",
+      "confidence": 37.64,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 44,
+          "max_score": 0.855,
+          "value": 37.64
+        },
+        "open water": {
+          "detections": 12,
+          "max_score": 0.68,
+          "value": 8.16
+        },
+        "bare ground": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "marsh grass": {
+          "detections": 24,
+          "max_score": 0.291,
+          "value": 6.98
+        }
+      }
+    },
+    "batch_15": {
+      "primary_habitat": "marsh grass",
+      "confidence": 7.47,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 10,
+          "max_score": 0.742,
+          "value": 7.42
+        },
+        "open water": {
+          "detections": 4,
+          "max_score": 0.652,
+          "value": 2.61
+        },
+        "bare ground": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "marsh grass": {
+          "detections": 16,
+          "max_score": 0.467,
+          "value": 7.47
+        }
+      }
+    },
+    "batch_16": {
+      "primary_habitat": "marsh grass",
+      "confidence": 64.8,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 89,
+          "max_score": 0.645,
+          "value": 57.36
+        },
+        "open water": {
+          "detections": 5,
+          "max_score": 0.336,
+          "value": 1.68
+        },
+        "bare ground": {
+          "detections": 45,
+          "max_score": 0.443,
+          "value": 19.95
+        },
+        "marsh grass": {
+          "detections": 116,
+          "max_score": 0.559,
+          "value": 64.8
+        }
+      }
+    },
+    "batch_17": {
+      "primary_habitat": "vegetation",
+      "confidence": 76.12,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 6,
+          "max_score": 0.289,
+          "value": 1.73
+        },
+        "vegetation": {
+          "detections": 116,
+          "max_score": 0.656,
+          "value": 76.12
+        },
+        "open water": {
+          "detections": 1,
+          "max_score": 0.439,
+          "value": 0.44
+        },
+        "bare ground": {
+          "detections": 10,
+          "max_score": 0.426,
+          "value": 4.26
+        },
+        "marsh grass": {
+          "detections": 97,
+          "max_score": 0.645,
+          "value": 62.52
+        }
+      }
+    },
+    "batch_18": {
+      "primary_habitat": "vegetation",
+      "confidence": 76.88,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 16,
+          "max_score": 0.797,
+          "value": 12.75
+        },
+        "vegetation": {
+          "detections": 96,
+          "max_score": 0.801,
+          "value": 76.88
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 19,
+          "max_score": 0.219,
+          "value": 4.16
+        },
+        "marsh grass": {
+          "detections": 125,
+          "max_score": 0.602,
+          "value": 75.2
+        }
+      }
+    },
+    "batch_19": {
+      "primary_habitat": "marsh grass",
+      "confidence": 56.62,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 95,
+          "max_score": 0.562,
+          "value": 53.44
+        },
+        "open water": {
+          "detections": 3,
+          "max_score": 0.139,
+          "value": 0.42
+        },
+        "bare ground": {
+          "detections": 1,
+          "max_score": 0.122,
+          "value": 0.12
+        },
+        "marsh grass": {
+          "detections": 96,
+          "max_score": 0.59,
+          "value": 56.62
+        }
+      }
+    },
+    "batch_20": {
+      "primary_habitat": "sandy beach",
+      "confidence": 2.44,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 3,
+          "max_score": 0.812,
+          "value": 2.44
+        },
+        "vegetation": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "open water": {
+          "detections": 1,
+          "max_score": 0.539,
+          "value": 0.54
+        },
+        "bare ground": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "marsh grass": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        }
+      }
+    },
+    "batch_21": {
+      "primary_habitat": "vegetation",
+      "confidence": 89.78,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 141,
+          "max_score": 0.637,
+          "value": 89.78
+        },
+        "open water": {
+          "detections": 1,
+          "max_score": 0.453,
+          "value": 0.45
+        },
+        "bare ground": {
+          "detections": 76,
+          "max_score": 0.52,
+          "value": 39.48
+        },
+        "marsh grass": {
+          "detections": 136,
+          "max_score": 0.637,
+          "value": 86.59
+        }
+      }
+    },
+    "batch_22": {
+      "primary_habitat": "sandy beach",
+      "confidence": 1.52,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 4,
+          "max_score": 0.381,
+          "value": 1.52
+        },
+        "vegetation": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "marsh grass": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        }
+      }
+    },
+    "batch_23": {
+      "primary_habitat": "marsh grass",
+      "confidence": 13.81,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 8,
+          "max_score": 0.637,
+          "value": 5.09
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 5,
+          "max_score": 0.281,
+          "value": 1.41
+        },
+        "marsh grass": {
+          "detections": 26,
+          "max_score": 0.531,
+          "value": 13.81
+        }
+      }
+    },
+    "batch_24": {
+      "primary_habitat": "vegetation",
+      "confidence": 100.24,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 1,
+          "max_score": 0.258,
+          "value": 0.26
+        },
+        "vegetation": {
+          "detections": 141,
+          "max_score": 0.711,
+          "value": 100.24
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 6,
+          "max_score": 0.5,
+          "value": 3.0
+        },
+        "marsh grass": {
+          "detections": 135,
+          "max_score": 0.389,
+          "value": 52.47
+        }
+      }
+    },
+    "batch_25": {
+      "primary_habitat": "marsh grass",
+      "confidence": 122.13,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 1,
+          "max_score": 0.187,
+          "value": 0.19
+        },
+        "vegetation": {
+          "detections": 148,
+          "max_score": 0.77,
+          "value": 113.89
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 11,
+          "max_score": 0.236,
+          "value": 2.6
+        },
+        "marsh grass": {
+          "detections": 162,
+          "max_score": 0.754,
+          "value": 122.13
+        }
+      }
+    },
+    "batch_26": {
+      "primary_habitat": "vegetation",
+      "confidence": 57.95,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 3,
+          "max_score": 0.832,
+          "value": 2.5
+        },
+        "vegetation": {
+          "detections": 115,
+          "max_score": 0.504,
+          "value": 57.95
+        },
+        "open water": {
+          "detections": 1,
+          "max_score": 0.486,
+          "value": 0.49
+        },
+        "bare ground": {
+          "detections": 1,
+          "max_score": 0.281,
+          "value": 0.28
+        },
+        "marsh grass": {
+          "detections": 130,
+          "max_score": 0.383,
+          "value": 49.77
+        }
+      }
+    },
+    "batch_27": {
+      "primary_habitat": "bare ground",
+      "confidence": 16.95,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "vegetation": {
+          "detections": 17,
+          "max_score": 0.602,
+          "value": 10.23
+        },
+        "open water": {
+          "detections": 1,
+          "max_score": 0.816,
+          "value": 0.82
+        },
+        "bare ground": {
+          "detections": 36,
+          "max_score": 0.471,
+          "value": 16.95
+        },
+        "marsh grass": {
+          "detections": 19,
+          "max_score": 0.471,
+          "value": 8.94
+        }
+      }
+    },
+    "batch_28": {
+      "primary_habitat": "marsh grass",
+      "confidence": 0.61,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 1,
+          "max_score": 0.516,
+          "value": 0.52
+        },
+        "vegetation": {
+          "detections": 1,
+          "max_score": 0.375,
+          "value": 0.38
+        },
+        "open water": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "bare ground": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        },
+        "marsh grass": {
+          "detections": 2,
+          "max_score": 0.307,
+          "value": 0.61
+        }
+      }
+    },
+    "batch_29": {
+      "primary_habitat": "vegetation",
+      "confidence": 41.04,
+      "all_scores": {
+        "sandy beach": {
+          "detections": 11,
+          "max_score": 0.309,
+          "value": 3.39
+        },
+        "vegetation": {
+          "detections": 55,
+          "max_score": 0.746,
+          "value": 41.04
+        },
+        "open water": {
+          "detections": 1,
+          "max_score": 0.789,
+          "value": 0.79
+        },
+        "bare ground": {
+          "detections": 62,
+          "max_score": 0.357,
+          "value": 22.16
+        },
+        "marsh grass": {
+          "detections": 0,
+          "max_score": 0,
+          "value": 0
+        }
+      }
+    }
+  },
+  "summary": {
+    "total_images": 34,
+    "images_validated": 34,
+    "total_dots": 3915,
+    "total_matched": 593,
+    "overall_match_pct": 15.1,
+    "total_copper": 2012,
+    "total_sam_detections": 2387,
+    "habitats_classified": 33,
+    "habitat_distribution": {
+      "marsh grass": 15,
+      "vegetation": 13,
+      "bare ground": 2,
+      "sandy beach": 3
+    }
+  }
+}

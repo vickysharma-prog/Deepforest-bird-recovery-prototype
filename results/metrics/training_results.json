@@ -1,0 +1,29 @@
+{
+  "training": {
+    "success": true,
+    "train_annotations": 3851,
+    "test_annotations": 64,
+    "train_images": 33,
+    "epochs": 5,
+    "training_time_s": 152.6,
+    "label_mode": "binary (Bird)"
+  },
+  "pretrained_results": {
+    "B_original.jpg": {
+      "n_total": 52,
+      "n_high_conf": 2,
+      "n_very_high": 0,
+      "max_score": 0.376,
+      "mean_score": 0.161
+    }
+  },
+  "finetuned_results": {
+    "B_original.jpg": {
+      "n_total": 300,
+      "n_high_conf": 300,
+      "n_very_high": 300,
+      "max_score": 1.0,
+      "mean_score": 1.0
+    }
+  }
+}

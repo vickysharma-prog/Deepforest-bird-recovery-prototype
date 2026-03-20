@@ -1,0 +1,42 @@
+{
+  "threshold": 0.1,
+  "proper_split": {
+    "train": 3401,
+    "test": 514
+  },
+  "tiers": {
+    "GOLD": 466,
+    "SILVER": 392,
+    "BRONZE": 313
+  },
+  "retrain": {
+    "success": true,
+    "time": 246.3
+  },
+  "retrained_results": {
+    "B_original.jpg": {
+      "gt_count": 64,
+      "total_preds": 0
+    },
+    "batch_09_original.jpg": {
+      "gt_count": 17,
+      "total_preds": 0
+    },
+    "batch_16_original.jpg": {
+      "gt_count": 35,
+      "total_preds": 0
+    },
+    "batch_18_original.jpg": {
+      "gt_count": 85,
+      "total_preds": 0
+    },
+    "batch_24_original.jpg": {
+      "gt_count": 306,
+      "total_preds": 0
+    },
+    "batch_28_original.jpg": {
+      "gt_count": 7,
+      "total_preds": 0
+    }
+  }
+}

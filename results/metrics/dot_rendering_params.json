@@ -1,0 +1,85 @@
+{
+  "dot_area_min": 18,
+  "dot_area_median": 50,
+  "dot_area_max": 173,
+  "dot_area_p25": 26,
+  "dot_area_p75": 85,
+  "dot_diameter_min": 4.8,
+  "dot_diameter_median": 8.0,
+  "dot_diameter_max": 14.8,
+  "circularity_median": 0.574,
+  "circularity_p10": 0.276,
+  "contrast_median": 43.5,
+  "contrast_p10": 4.1,
+  "anti_aliased_pct": 1.6,
+  "color_models": {
+    "red": {
+      "count": 282,
+      "h_mean": 72.2,
+      "h_std": 31.5,
+      "s_mean": 163.9,
+      "s_std": 40.8,
+      "v_mean": 191.4,
+      "v_std": 27.7,
+      "median_diameter": 9.8,
+      "median_contrast": 46.2
+    },
+    "blue": {
+      "count": 28,
+      "h_mean": 119.5,
+      "h_std": 5.5,
+      "s_mean": 188.1,
+      "s_std": 38.4,
+      "v_mean": 189.9,
+      "v_std": 23.9,
+      "median_diameter": 8.8,
+      "median_contrast": 40.0
+    },
+    "green": {
+      "count": 322,
+      "h_mean": 51.6,
+      "h_std": 12.9,
+      "s_mean": 141.7,
+      "s_std": 48.3,
+      "v_mean": 157.2,
+      "v_std": 37.7,
+      "median_diameter": 7.2,
+      "median_contrast": 19.6
+    },
+    "yellow": {
+      "count": 440,
+      "h_mean": 31.1,
+      "h_std": 3.6,
+      "s_mean": 186.2,
+      "s_std": 40.0,
+      "v_mean": 157.4,
+      "v_std": 30.0,
+      "median_diameter": 6.6,
+      "median_contrast": 60.3
+    },
+    "cyan": {
+      "count": 77,
+      "h_mean": 88.4,
+      "h_std": 2.0,
+      "s_mean": 197.7,
+      "s_std": 31.8,
+      "v_mean": 171.0,
+      "v_std": 43.4,
+      "median_diameter": 8.9,
+      "median_contrast": 35.8
+    },
+    "magenta": {
+      "count": 50,
+      "h_mean": 148.6,
+      "h_std": 5.4,
+      "s_mean": 185.1,
+      "s_std": 47.9,
+      "v_mean": 189.1,
+      "v_std": 32.4,
+      "median_diameter": 10.3,
+      "median_contrast": 59.7
+    }
+  },
+  "total_dots_analyzed": 1199,
+  "images_analyzed": 4
+}

@@ -1,0 +1,19 @@
+{
+  "dataset": {
+    "csv_rows": 49204,
+    "unique_images": 18304,
+    "species_codes": 102
+  },
+  "detection": {
+    "total_expected": 2143,
+    "total_detected": 1171,
+    "count_accuracy": 54.6,
+    "position_plausibility": 97.8
+  },
+  "output_dataset": {
+    "total_annotations": 1171,
+    "unique_species": 10,
+    "train": 1107,
+    "test": 64
+  }
+}
