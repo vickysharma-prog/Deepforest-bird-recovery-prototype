@@ -5,6 +5,31 @@ Data source: twi-aviandata.s3.amazonaws.com (Gulf of Mexico avian monitoring, 20
 
 ---
 
+## Pipeline Output Samples
+
+### Study Images (Screenshot vs Original)
+![Study Images](results/cell1_study_images.png)
+
+### Data Analysis (49,204 rows)
+![CSV Analysis](results/cell2_forensic_analysis.png)
+
+### Dot Properties (Measured from Real Data)
+![Dot Properties](results/cell3_dot_properties.png)
+
+### Dot Detection Results (4 Study Images)
+![Detection](results/cell6_detections_v2.png)
+
+### Validation — 98.3% of Dots Are Real
+![Validation](results/cell7_validation_grid.png)
+
+### Coordinate Mapping (Screenshot → Original)
+![Mapping](results/cell8_mapping.png)
+
+### Full Circle: Corrupted → Recovered → Detector
+![Full Circle](results/cell12_full_circle.png)
+
+---
+
 ## What this prototype does
 I spent about a month building this. The first two weeks were pure study — mapping the S3 bucket (533K files), analyzing the CSV (49,204 rows, 60 columns), downloading 25 diverse images, measuring dot sizes and colors, testing SAM 3 and DeepForest, and figuring out what was actually feasible before writing any pipeline code.
 The pipeline itself went through multiple iterations. Five versions of the detector, four training experiments, six approaches that failed and got thrown out. Everything is documented.
