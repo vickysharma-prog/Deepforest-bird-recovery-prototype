@@ -6,9 +6,8 @@ Data source: twi-aviandata.s3.amazonaws.com (Gulf of Mexico avian monitoring, 20
 ---
 
 ## About This Work
-This prototype was built over 1.5 months under the mentorship of my uncle (a past GSoC contributor) who guided me through the open-source contribution process and research methodology. Before writing any pipeline code, I spent two weeks studying the data — mapping 533K files in the S3 bucket, analyzing 49,204 CSV rows across 60 columns, downloading and measuring 25 diverse images, and testing existing models (SAM 3, DeepForest, GroundingDINO) to understand what was feasible.
-
-The pipeline went through five detector versions, four training experiments, and six approaches that were tested and abandoned. Every failure is documented with root cause analysis. I also contributed 9 pull requests to the DeepForest repository (4 merged, 3 open, 2 closed) and opened a discussion on this specific project idea.
+This prototype was built over 1.5 months under the mentorship of my uncle and guidance from past GSoC contributors who guided me through the open-source contribution process and research. Before writing any pipeline code, I spent two weeks studying the data — mapping 533K files in the S3 bucket, analyzing 49,204 CSV rows across 60 columns, downloading and measuring 25 diverse images, and testing existing models (SAM 3, DeepForest, GroundingDINO) to understand what was feasible.
+The pipeline went through five detector versions, four training experiments, and six approaches that were tested and abandoned. Every failure is documented with root cause analysis. 
 The biggest lesson: study the data before building. 40% of my time was measurement and analysis. Every measured parameter directly informed a pipeline design decision. Detection accuracy jumped from 44% (first version, guessed parameters) to 70.8% (final version, measured parameters) without changing the fundamental approach.
 
 ---
