@@ -1,3 +1,4 @@
+> This project is developed as part of [Google Summer of Code 2026](https://summerofcode.withgoogle.com/), mentored by DeepForest.
 # Recovering Bird Annotations from Historical Airborne Imagery
 Prototype for recovering ML-ready annotations from 18,304 historical bird survey screenshots where colored dots were baked directly into images by a point-counting tool. No coordinate data was saved. This prototype extracts dot positions, maps them to original high-resolution photographs, and produces DeepForest-compatible training data.
 
