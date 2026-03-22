@@ -1,4 +1,4 @@
-> This project is developed as part of [Google Summer of Code 2026](https://summerofcode.withgoogle.com/), mentored by DeepForest.
+> This project is developed as part of [Google Summer of Code 2026](https://summerofcode.withgoogle.com/),under the DeepForest project (WeeCology).
 # Recovering Bird Annotations from Historical Airborne Imagery
 Prototype for recovering ML-ready annotations from 18,304 historical bird survey screenshots where colored dots were baked directly into images by a point-counting tool. No coordinate data was saved. This prototype extracts dot positions, maps them to original high-resolution photographs, and produces DeepForest-compatible training data.
 
@@ -6,8 +6,8 @@ Data source: twi-aviandata.s3.amazonaws.com (Gulf of Mexico avian monitoring, 20
 
 ---
 ## About This Work
-This prototype was built over 1.5 months under the mentorship of my uncle and guidance from past GSoC contributors who guided me through the open-source contribution process and research. Before writing any pipeline code, I spent two weeks studying the data — mapping 533K files in the S3 bucket, analyzing 49,204 CSV rows across 60 columns, downloading and measuring 25 diverse images, and testing existing models (SAM 3, DeepForest, GroundingDINO) to understand what was feasible.
-The pipeline went through five detector versions, four training experiments, and six approaches that were tested and abandoned. Every failure is documented with root cause analysis. 
+This prototype was built over 1.5 months with guidance from the open-source community and past DeepForest contributors who guided me through the open-source contribution process and research. Before writing any pipeline code, I spent two weeks studying the data — mapping 533K files in the S3 bucket, analyzing 49,204 CSV rows across 60 columns, downloading and measuring 25 diverse images, and testing existing models (SAM 3, DeepForest, GroundingDINO) to understand what was feasible.
+The pipeline went through multiple detector versions, four training experiments, and six approaches that were tested and abandoned. Every failure is documented with root cause analysis. 
 The biggest lesson: study the data before building. 40% of my time was measurement and analysis. Every measured parameter directly informed a pipeline design decision. Detection accuracy jumped from 44% (first version, guessed parameters) to 70.8% (final version, measured parameters) without changing the fundamental approach.
 
 ---
@@ -71,7 +71,8 @@ Top 10 mapped dots on original image at high zoom. Red crosshairs mark the mappe
 ### Training Experiment: Full Circle
 ![Full Circle](results/cell12_full_circle.png)
 
-The complete pipeline story on one image: (1) corrupted screenshot with baked-in dots, (2) 64/93 dots recovered at 69% accuracy, (3) pretrained DeepForest produces 2 high-confidence detections, (4) fine-tuned model — this panel shows the bfloat16-corrupted run (300 false detections at score 1.0). Root cause identified and fixed in subsequent experiments. See [training analysis](docs/training_analysis.md).
+The complete pipeline story on one image: (1) corrupted screenshot with baked-in dots, (2) 64/93 dots recovered at 69% accuracy,(3) pretrained DeepForest finds 0 high-confidence detections (max score 0.23 — effectively blind on aerial data), (4) fine-tuned model — this panel shows the bfloat16-corrupted run (300 false detections at score 1.0). Root cause identified and fixed in subsequent experiments. 
+See [training analysis](docs/training_analysis.md).
 
 ### Training Experiment: SIFT-Only (Root Cause Fix)
 ![SIFT Only](results/cell12d_sift_only.png)
