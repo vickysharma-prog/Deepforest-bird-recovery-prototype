@@ -4,33 +4,6 @@ Prototype for recovering ML-ready annotations from 18,304 historical bird survey
 
 Data source: twi-aviandata.s3.amazonaws.com (Gulf of Mexico avian monitoring, 2010-2021, post-Deepwater Horizon)
 
-
-```python
-from deepforest import main, recovery
-
-# Recover annotations from a single image pair
-result = recovery.recover_annotations(
-    screenshot_path="screenshot.png",
-    original_path="original.jpg",
-    csv_path="avianData.csv",
-    matching="auto"  # auto | sift | loftr | uniform
-)
-
-# result.annotations   → DataFrame (xmin, ymin, xmax, ymax, label, score)
-# result.quality_tier   → "GOLD" | "SILVER" | "BRONZE"
-# result.mapping_error  → reprojection error in pixels
-# result.metadata       → species counts, colony, habitat
-
-# Train detector on recovered data
-model = main.deepforest()
-model.load_model(model_name="weecology/deepforest-bird", revision="main")
-model.config["train"]["csv_file"] = "annotations_gold.csv"
-model.config["train"]["root_dir"] = "training/"
-model.config["train"]["epochs"] = 15
-model.create_trainer()
-model.trainer.fit(model)
-
-````
 ---
 ## About This Work
 This prototype was built over 1.5 months with guidance from the open-source community and past DeepForest contributors who guided me through the open-source contribution process and research. Before writing any pipeline code, I spent two weeks studying the data — mapping 533K files in the S3 bucket, analyzing 49,204 CSV rows across 60 columns, downloading and measuring 25 diverse images, and testing existing models (SAM 3, DeepForest, GroundingDINO) to understand what was feasible.
