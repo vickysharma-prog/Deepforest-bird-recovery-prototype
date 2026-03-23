@@ -4,6 +4,17 @@ Prototype for recovering ML-ready annotations from 18,304 historical bird survey
 
 Data source: twi-aviandata.s3.amazonaws.com (Gulf of Mexico avian monitoring, 2010-2021, post-Deepwater Horizon)
 
+```text
+SIFT + CLAHE  ──→  ≥10 inliers?  ──→  GOLD  (<1px)
+     │ no
+     ↓
+  LoFTR       ──→  ≥10 matches?  ──→  GOLD  (<3px)
+     │ no
+     ↓
+Zoom-calibrated uniform  ──→  SILVER (<5px) or BRONZE (~30px)
+``` 
+
+
 ---
 ## About This Work
 This prototype was built over 1.5 months with guidance from the open-source community and past DeepForest contributors who guided me through the open-source contribution process and research. Before writing any pipeline code, I spent two weeks studying the data — mapping 533K files in the S3 bucket, analyzing 49,204 CSV rows across 60 columns, downloading and measuring 25 diverse images, and testing existing models (SAM 3, DeepForest, GroundingDINO) to understand what was feasible.
