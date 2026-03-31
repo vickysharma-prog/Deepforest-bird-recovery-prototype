@@ -116,6 +116,93 @@ Screenshot → Decompose → Detect Dots → Validate → Map → Export
 5. **SAM 3 Integration** — Bird validation, habitat classification, scene captioning
 6. **Export** — DeepForest-compatible CSV with train/test split
 
+## Architecture
+
+```mermaid
+flowchart TB
+    subgraph INPUTS["📥 INPUTS"]
+        SS["🖥️ Corrupted Screenshot<br/>Dots baked into pixels"]
+        OR["📷 Original Photograph<br/>Clean high-resolution"]
+        CSV["📊 CSV Ground Truth<br/>49,204 rows × 60 cols<br/>Per-species counts"]
+    end
+
+    subgraph STAGE1["Stage 1: Screenshot Decomposition"]
+        GP["Grey Profile"]
+        SE["Sobel Edges"]
+        CV["Color Variance"]
+        GP & SE & CV --> MC["3-Method Consensus<br/>Median Boundary"]
+        MC --> AE["Aerial Region Extracted"]
+        MC --> DI["Dialog Region"]
+    end
+
+    subgraph STAGE2["Stage 2: Annotation Extraction"]
+        HSV["HSV Segmentation<br/>6 Color Channels<br/>Wide Bins"]
+        VB["Vegetation Boost<br/>Green S+50 when<br/>coverage >25%"]
+        CC["Connected Components<br/>+ Distance Transform<br/>Cluster Splitting"]
+        HSV --> VB --> CC
+        CC --> DOTS["Detected Dot<br/>Positions + Colors"]
+    end
+
+    subgraph STAGE3["Stage 3: Species Assignment"]
+        RO["Rank-Order Matching<br/>Largest color → Most abundant species<br/>CSV counts as ground truth"]
+    end
+
+    subgraph STAGE4["Stage 4: Coordinate Recovery"]
+        SIFT["SIFT + RANSAC<br/>2000 keypoints<br/>Lowe ratio 0.75"]
+        UNI["Uniform Fallback<br/>Height-ratio scaling<br/>scale_y for both axes"]
+        SIFT -->|"≥10 matches"| GOLD["🥇 GOLD<br/><1px error"]
+        SIFT -->|"<10 matches"| UNI
+        UNI --> SILVER["🥈 SILVER / 🥉 BRONZE<br/>5-30px error"]
+    end
+
+    subgraph STAGE5["Stage 5: Cross-Validation"]
+        SAM["SAM 3<br/>Text prompt: 'bird'"]
+        IOU["IoU ≥0.05 +<br/>Distance ≤100px<br/>Matching"]
+        HAB["Habitat Classification<br/>5 prompts × all images"]
+        SAM --> IOU
+        SAM --> HAB
+    end
+
+    subgraph STAGE6["Stage 6: Export"]
+        DF["DeepForest CSV<br/>xmin, ymin, xmax,<br/>ymax, label, score"]
+        SPLIT["Train/Test Split<br/>by Colony"]
+        META["Quality Metadata<br/>Tier + Error + Species"]
+        DF --> SPLIT
+        DF --> META
+    end
+
+    subgraph TRAINING["🔬 Training Pipeline"]
+        BIN["Stage 1: Binary<br/>All → 'Bird'<br/>GOLD only"]
+        MIX["Stage 2: Binary<br/>GOLD + SILVER"]
+        SPE["Stage 3: Species<br/>Top 5 labels"]
+        RET["DeepForest RetinaNet<br/>lr=1e-4, focal loss<br/>bfloat16 disabled"]
+        BIN --> MIX --> SPE
+        SPE --> RET
+    end
+
+    subgraph OUTPUTS["📤 OUTPUTS"]
+        ANN["3,915 Annotations<br/>21 Species"]
+        MOD["Fine-tuned<br/>Bird Detector"]
+        HAB2["Habitat Data<br/>97% classified"]
+        CAP["Scene Captions<br/>34 generated"]
+    end
+
+    SS --> STAGE1
+    AE --> STAGE2
+    CSV --> STAGE3
+    DOTS --> STAGE3
+    RO --> STAGE4
+    OR --> STAGE4
+    GOLD & SILVER --> STAGE5
+    GOLD & SILVER --> STAGE6
+    IOU --> STAGE6
+    HAB --> HAB2
+    STAGE6 --> TRAINING
+    TRAINING --> MOD
+    STAGE6 --> ANN
+    STAGE5 --> CAP
+```
+
 ## Key Findings
 
 - CSV ground truth is 100% accurate — OCR abandoned after testing
